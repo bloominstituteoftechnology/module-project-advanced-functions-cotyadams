@@ -65,8 +65,9 @@
     // ❗ Notes:
     // 🧠 Solve this challenge using the forEach method of the learners array.
     // 🧠 Use arrow functions whenever possible.
-    const processLearnerForEach = () => {
-
+    const processLearnerForEach = (array) => {
+      array.forEach(learner => processSingleLearner(learner));
+      return array;
     }
 
     // 👉 CHALLENGE 4
@@ -75,8 +76,9 @@
     // ❗ Notes:
     // 🧠 Solve this challenge using the map method of the learners array.
     // 🧠 Use arrow functions.
-    const processLearnerMap = () => {
-
+    const processLearnerMap = (array) => {
+      let final_array = array.map(learner => processSingleLearner(learner));
+      return final_array;
     }
 
     // 👉 CHALLENGE 5
